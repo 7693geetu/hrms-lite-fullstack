@@ -2,9 +2,9 @@ HRMS Lite - Human Resource Management System
 A professional, full-stack Human Resource Management System (HRMS) built to streamline employee record management and automate daily attendance tracking.
 
 🔗 Deployment Links
-Live Frontend URL: [INSERT_YOUR_VERCEL_URL_HERE]
+Live Frontend URL: https://hrms-lite-fullstack.vercel.app
 
-Hosted Backend API: [INSERT_YOUR_RENDER_URL_HERE]
+Hosted Backend API: https://hrms-lite-fullstack-pl4h.onrender.com
 
 GitHub Repository: https://github.com/7693geetu/hrms-lite-fullstack
 
