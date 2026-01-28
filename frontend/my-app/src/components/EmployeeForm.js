@@ -3,19 +3,30 @@ import React, { useState } from 'react';
 const EmployeeForm = ({ onRefresh }) => {
   const [form, setForm] = useState({ emp_id: '', name: '', email: '', department: '' });
 
+  // 1. DYNAMIC API URL: This reads from Vercel settings if available, 
+  // otherwise it defaults to localhost for your personal testing.
+  const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await fetch('http://localhost:5000/api/employees', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(form)
-    });
-    if (res.ok) {
-      setForm({ emp_id: '', name: '', email: '', department: '' });
-      onRefresh();
-    } else {
-      const data = await res.json();
-      alert(data.error);
+    try {
+      // 2. USE THE DYNAMIC URL: We replace the hardcoded 'localhost' link here.
+      const res = await fetch(`${API_URL}/api/employees`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form)
+      });
+
+      if (res.ok) {
+        setForm({ emp_id: '', name: '', email: '', department: '' });
+        onRefresh();
+      } else {
+        const data = await res.json();
+        alert(data.error || "Failed to register employee");
+      }
+    } catch (error) {
+      console.error("Connection Error:", error);
+      alert("Could not connect to the server. Is the backend awake?");
     }
   };
 
@@ -33,4 +44,4 @@ const EmployeeForm = ({ onRefresh }) => {
   );
 };
 
-export default EmployeeForm; // Critical export
+export default EmployeeForm;
