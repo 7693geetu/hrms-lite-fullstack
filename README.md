@@ -6,7 +6,19 @@ As per the assessment guidelines, this repository contains the complete full-sta
 - **Hosted Backend API**: [https://hrms-lite-fullstack-pl4h.onrender.com](https://hrms-lite-fullstack-pl4h.onrender.com)
 - **GitHub Repository**: [https://github.com/7693geetu/hrms-lite-fullstack](https://github.com/7693geetu/hrms-lite-fullstack)
 
-📸 Application Screenshot
+## 📸 Application Screenshots
+
+### Admin Dashboard & Registration
+The core interface allows for real-time tracking of employee presence and a quick registration form.
+
+![Dashboard Overview](screenshots/s1.png)
+
+### Features Gallery
+| Daily Attendance | Employee Records | System Overview | Duplicate ID Not Allowed |
+| :---: | :---: | :---: | :---: |
+| ![S1](screenshots/s1.png) | ![S3](screenshots/S3.png) | ![S4](screenshots/S4.png) | ![S2](screenshots/S2.png) |
+
+> **Note:** The interface provides a live "Daily Overview" including Total, Present, and Pending counts.
 
 
 ## 📌 Project Overview
