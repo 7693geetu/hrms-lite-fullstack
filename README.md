@@ -6,6 +6,9 @@ As per the assessment guidelines, this repository contains the complete full-sta
 - **Hosted Backend API**: [https://hrms-lite-fullstack-pl4h.onrender.com](https://hrms-lite-fullstack-pl4h.onrender.com)
 - **GitHub Repository**: [https://github.com/7693geetu/hrms-lite-fullstack](https://github.com/7693geetu/hrms-lite-fullstack)
 
+📸 Application Screenshot
+
+
 ## 📌 Project Overview
 The **HRMS Lite** is a clean, working solution designed to manage employee registration and track daily attendance. It bridges the gap between a modern React UI and a Python-based REST API, providing real-time data persistence.
 
